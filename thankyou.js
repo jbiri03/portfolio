@@ -1,7 +1,7 @@
 const form = document.querySelector('form');
 const thankYouMessage = document.getElementById('thank-you-message');
 
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', async (e) => {
     e.preventDefault();
     thankYouMessage.classList.add('show');
 
