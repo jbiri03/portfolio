@@ -1,7 +1,7 @@
 const form = document.querySelector('form');
 const thankYouMessage = document.getElementById('thank-you-message');
 
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', async (e) => {
     e.preventDefault();
     thankYouMessage.classList.add('show');
 
@@ -14,5 +14,7 @@ form.addEventListener('submit', (e) => {
 
     if (response.ok) {
         form.reset();
+        setTimeout(() => thankYouMessage.classList.remove('show'), 3000);
+
     }
 });
