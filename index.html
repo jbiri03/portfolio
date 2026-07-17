@@ -1,116 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jasmine Biri | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- NAME HEADER -->
-    <div class="hero">
-        <h1>Jasmine Biri</h1>
-        <p class="tagline">Software Developer • Game Dev Learner • Creator</p>
-    </div>
+  <a href="#main" class="skip-link">Skip to content</a>
 
-
-    <!-- NAV BAR -->
-    <nav class="nav">
-        <a href="#home" class="nav-links">HOME</a>
-        <a href="#about" class="nav-links">ABOUT</a>
-        <a href="#projects" class="nav-links">PROJECTS</a>
-        <a href="#contact" class="nav-links">CONTACT</a>
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a href="#home" class="brand">Jasmine Biri</a>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
     </nav>
+  </header>
 
-    <!-- HOME SECTION -->
-    <section id="home">
-        <p><strong>HELLO WORLD</strong></p>
-        <p>I'm Jasmine, a <span class="highlight">software developer</span>.</p>
-        <p>I build <span class="highlight">web applications</span> and enjoy 
-        <span class="highlight">game development</span>, 
-        <span class="highlight">problem-solving</span>, and 
-        <span class="highlight">interactive software</span>.</p>
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Software Developer • Game Dev Learner</span>
+          <h1>Building playful, interactive experiences through code.</h1>
+          <p>
+            Hi, I’m <span class="accent">Jasmine</span> — a software developer who enjoys building
+            web applications, exploring game development, and solving problems through code.
+          </p>
+          <p>
+            I’m especially interested in interactive software, full-stack development, and projects
+            that blend creativity with technical structure.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="assets/jasmine_biri_resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Open Resume</a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Skills summary">
+          <h2>Current focus</h2>
+          <p>
+            Building polished web projects, growing as a developer, and expanding into game
+            development through hands-on learning.
+          </p>
+
+          <div class="mini-stack">
+            <span class="chip"><span class="chip-dot"></span>JavaScript</span>
+            <span class="chip"><span class="chip-dot"></span>HTML/CSS</span>
+            <span class="chip"><span class="chip-dot"></span>SQL</span>
+            <span class="chip"><span class="chip-dot"></span>Git</span>
+            <span class="chip"><span class="chip-dot"></span>Unity</span>
+            <span class="chip"><span class="chip-dot"></span>Blender</span>
+          </div>
+        </aside>
+      </div>
     </section>
 
-
-    <!-- ABOUT ME SECTION -->
     <section id="about">
-        <h2 class="section-accent">ABOUT ME</h2>
-        <div class="about-me">
-            <h3>Who am I?</h3>
-            <p>Hi, I'm Jasmine, a software engineer who enjoys building useful and interactive applications. I have a strong foundation in JavaScript and am currently learning Lua and C# as I grow my skills in software and game development.</p>
-            <p>Outside of coding, I enjoy playing video games and exploring different types of games.</p>
-        </div>
-        <div class="about-me">
-            <h3>My Skills</h3>
-            <ul>
-                <li class="skills"><span class="skill-dot"></span>JavaScript</li>
-                <li class="skills"><span class="skill-dot"></span>HTML5</li>
-                <li class="skills"><span class="skill-dot"></span>CSS3</li>
-                <li class="skills"><span class="skill-dot"></span>SQL</li>
-                <li class="skills"><span class="skill-dot"></span>Git</li>
-                <li class="skills"><span class="skill-dot"></span>Java</li>
-                <li class="skills"><span class="skill-dot"></span>Lua</li>
-                <li class="skills"><span class="skill-dot"></span>C#</li>
-            </ul>
-        </div>
-        <div class="about-me">
-            <h3>Tools</h3>
-            <ul>
-                <li class="tools">Unity</li>
-                <li class="tools">Blender</li>
-            </ul>
-        </div>
-        <button id="resume"><a href="assets/jasmine_biri_resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></button>
-    </section>
+      <div class="container section-card">
+        <h2 class="section-title">About Me</h2>
 
-    <!-- PROJECTS SECTION -->
-    <section id="projects">
-        <h2><span class="section-accent">Projects</span></h2>
-        <p class="project-intro">Here are some things I've built recently:</p>
-        <div class="project-card">
-            <a href="https://idleclick-1.onrender.com/index.php" target="_blank" rel="noopener noreferrer">
-                <img src="images/home_page.png" alt="Cake Idle Clicker Home Page" class="project-img">
-                <h3 class="project-title">Cake Idle Clicker</h3>
-            </a>
-        </div>
-    </section>
-
-
-    <!-- CONTACT PAGE -->
-        <section id="contact">
-            <h2 class="section-accent">Contact</h2>
-            <p class="contact-sub">I'd love to hear from you!</p>
-
-            <div class="contact-info">
-                <p>Email: <span class="highlight">Jasminebiri03@gmail.com</span></p>
-
-                <div class="social-links">       
-                    <div class="social-links">
-                        <a href="https://github.com/jbiri03" target="_blank" class="social-btn">
-                            <img src="images/github-cat.png" alt="GitHub Logo">
-                        </a>
-
-                        <a href="https://linkedin.com/in/jasminebiri" target="_blank" class="social-btn">
-                            <img src="images/in-logo.png" alt="LinkedIn Logo">
-                        </a>
-                    </div> 
-                </div>
+        <div class="about-grid">
+          <div>
+            <div class="stack-block">
+              <h3>Who I am</h3>
+              <p>
+                I’m a software developer who enjoys building useful and interactive applications.
+                I have a strong foundation in JavaScript and web development, and I’m continuing
+                to grow my skills in software and game development.
+              </p>
             </div>
 
-            <form class="contact-form">
-                <label>Name</label>
-                <input type="text" placeholder="Your name">
+            <div class="stack-block">
+              <h3>What I enjoy</h3>
+              <p>
+                Outside of coding, I enjoy gaming, exploring different styles of games,
+                and spending time on hobbies that keep me inspired.
+              </p>
+            </div>
+          </div>
 
-                <label>Email</label>
-                <input type="email" placeholder="Your email">
+          <div>
+            <div class="stack-block">
+              <h3>Skills</h3>
+              <ul class="chip-group">
+                <li class="chip"><span class="chip-dot"></span>JavaScript</li>
+                <li class="chip"><span class="chip-dot"></span>HTML5</li>
+                <li class="chip"><span class="chip-dot"></span>CSS3</li>
+                <li class="chip"><span class="chip-dot"></span>SQL</li>
+                <li class="chip"><span class="chip-dot"></span>Git</li>
+                <li class="chip"><span class="chip-dot"></span>Java</li>
+                <li class="chip"><span class="chip-dot"></span>Lua</li>
+                <li class="chip"><span class="chip-dot"></span>C#</li>
+              </ul>
+            </div>
 
-                <label>Message</label>
-                <textarea placeholder="Write your message"></textarea>
+            <div class="stack-block">
+              <h3>Tools</h3>
+              <ul class="chip-group">
+                <li class="chip"><span class="chip-dot"></span>Unity</li>
+                <li class="chip"><span class="chip-dot"></span>Blender</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                <button type="submit" class="contact-submit">Send</button>
-            </form>
-        </section>
+    <section id="projects">
+      <div class="container section-card">
+        <div class="section-heading">
+          <h2 class="section-title">Projects</h2>
+          <p class="section-sub">A selection of projects I’ve built across web development and interactive software.</p>
+        </div>
 
+        <div class="projects-grid">
+          <article class="project-card">
+            <a href="https://idleclick-1.onrender.com/index.php" target="_blank" rel="noopener noreferrer">
+              <img src="images/home_page.png" alt="Screenshot of Cake Idle Clicker home page">
+              <div class="project-content">
+                <p class="project-kicker">Web Game</p>
+                <h3>Cake Idle Clicker</h3>
+                <p class="project-tech">PHP • JavaScript • SQLite • Render</p>
+                <p class="project-desc">
+                  A browser-based idle game focused on progression, interactivity, and persistent gameplay systems.
+                </p>
+              </div>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container section-card">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact-grid">
+          <div class="contact-list">
+            <p>I’d love to hear from you!</p>
+            <p><strong>Email:</strong> jasminebiri03@gmail.com</p>
+
+            <div class="social-links">
+              <a href="https://github.com/jbiri03" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+                <img src="images/github-cat.png" alt="GitHub logo">
+              </a>
+
+              <a href="https://linkedin.com/in/jasminebiri" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+                <img src="images/in-logo.png" alt="LinkedIn logo">
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form">
+            <label>
+              Name
+              <input type="text" placeholder="Your name">
+            </label>
+
+            <label>
+              Email
+              <input type="email" placeholder="Your email">
+            </label>
+
+            <label>
+              Message
+              <textarea placeholder="Write your message"></textarea>
+            </label>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 2026 Jasmine Biri</div>
+  </footer>
 </body>
 </html>
