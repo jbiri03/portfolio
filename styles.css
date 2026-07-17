@@ -63,7 +63,7 @@ body {
 /* SECTIONS */
 section {
     max-width: 900px;
-    margin: 0 auto 32px auto;
+    margin: 0 auto 35px auto; /* vertical spacing */
     background: #ffffff;
     border-radius: 24px;
     padding: 24px 22px;
