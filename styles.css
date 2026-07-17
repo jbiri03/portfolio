@@ -519,7 +519,9 @@ footer {
 
 /* THANK YOU MESSAGE */
 #thank-you-message {
-  display: none;
+  opacity: 0;
+  pointer-events: none; /* prevents clicks when hidden */
+  transition: opacity 0.4s ease;
   margin-top: 1rem;
   padding: 0.95rem 1rem;
   border-radius: 16px;
@@ -533,17 +535,7 @@ footer {
 }
 
 #thank-you-message.show {
-  display: block;
+  opacity: 1;
+  pointer-events: auto;
   animation: fadeSlideIn 0.28s ease;
-}
-
-@keyframes fadeSlideIn {
-  from {
-    opacity: 0;
-    transform: translateY(6px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
