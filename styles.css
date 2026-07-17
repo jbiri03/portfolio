@@ -1,0 +1,233 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(135deg, #fdfbff, #f3f6ff);
+    color: #333;
+    padding: 24px;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin: 0;
+    color: #3b3f73;
+}
+
+.tagline {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #6b6f9b;
+}
+
+/* NAV */
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 32px;
+}
+
+.nav-links {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    color: #3b3f73;
+
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(120, 130, 180, 0.18);
+    transition: 0.2s;
+}
+
+.nav-links:hover {
+    transform: translateY(-1px);
+    background: #eef1ff;
+}
+
+/* SECTIONS */
+section {
+    max-width: 900px;
+    margin: 0 auto 32px auto;
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 24px 22px;
+    box-shadow: 0 10px 30px rgba(120, 130, 180, 0.18);
+}
+
+/* HR */
+hr {
+    max-width: 900px;
+    margin: 0 auto 24px auto;
+    border: none;
+    border-top: 1px dashed #d4d8f0;
+}
+
+/* HOME */
+#home p strong {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.highlight {
+    color: #ff7aa2;
+    font-weight: 700;
+}
+
+/* HEADINGS */
+.section-accent {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 700;
+    color: #3b3f73;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: #eef1ff;
+}
+
+/* ABOUT */
+.about-me {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.about-me h3 {
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #3b3f73;
+}
+
+/* SKILLS + TOOLS */
+.skills,
+.tools {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    margin: 6px;
+    padding: 6px 12px;
+    border-radius: 999px;
+
+    background: #f7f8ff;
+    color: #3b3f73;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.skill-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: #ff7aa2;
+}
+
+/* RESUME BUTTON */
+#resume {
+    margin-top: 16px;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: #ff7aa2;
+    box-shadow: 0 6px 16px rgba(255, 122, 162, 0.35);
+}
+
+#resume a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* PROJECTS */
+.project-intro {
+    font-size: 14px;
+    color: #6b6f9b;
+    margin-bottom: 16px;
+}
+
+.project-card {
+    max-width: 420px;
+    margin: 0 auto;
+    border-radius: 24px;
+    background: #f7f8ff;
+    padding: 16px;
+    box-shadow: 0 8px 20px rgba(120, 130, 180, 0.18);
+}
+
+.project-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.project-img {
+    width: 100%;
+    border-radius: 18px;
+    margin-bottom: 10px;
+    transition: 0.2s;
+}
+
+.project-img:hover {
+    transform: translateY(-2px);
+}
+
+.project-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #3b3f73;
+    text-align: center;
+}
+
+/* CONTACT */
+/* CONTACT SECTION UPGRADE */
+#contact {
+    text-align: center;
+}
+
+/* SOCIAL LINKS WRAPPER */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 20px;
+}
+
+/* SOCIAL BUTTONS — larger + centered + bubble */
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 64px;
+    height: 64px;
+
+    background: #ffffff;
+    border-radius: 22px;
+
+    box-shadow: 0 10px 24px rgba(120, 130, 180, 0.22);
+    transition: 0.25s;
+}
+
+/* LOGO SIZE — bigger + crisp */
+.social-btn img {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+}
+
+/* HOVER EFFECT — soft lift */
+.social-btn:hover {
+    transform: translateY(-4px);
+    background: #eef1ff;
+}
