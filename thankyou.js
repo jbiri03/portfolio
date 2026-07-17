@@ -5,16 +5,14 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     thankYouMessage.classList.add('show');
 
-    setTimeout(async () => {
-        const formData = new FormData(form);
+    const formData = new FormData(form);
 
-        const response = await fetch("https://forminit.com/f/65egt3pp0v0", {
-            method: "POST",
-            body: formData
-        });
+    const response = await fetch("https://forminit.com/f/65egt3pp0v0", {
+        method: "POST",
+        body: formData
+    });
 
-        if (response.ok) {
-            form.reset();
-        }
-    }, 2000);
+    if (response.ok) {
+        form.reset();
+    }
 });
