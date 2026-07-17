@@ -1,4 +1,9 @@
 
+:root {
+   --gradient-one:#fdfbff;
+   --gradient-two: #f3f6ff;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -6,7 +11,7 @@
 body {
     margin: 0;
     font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    background: linear-gradient(135deg, #fdfbff, #f3f6ff);
+    background: linear-gradient(135deg, var(--gradient-one), var(--gradient-two));
     color: #333;
     padding: 24px;
 }
@@ -190,20 +195,19 @@ hr {
 }
 
 /* CONTACT */
-/* CONTACT SECTION UPGRADE */
 #contact {
-    text-align: center;
+    text-align: left; 
 }
 
 /* SOCIAL LINKS WRAPPER */
 .social-links {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; 
     gap: 24px;
     margin-top: 20px;
 }
 
-/* SOCIAL BUTTONS — larger + centered + bubble */
+/* SOCIAL BUTTONS */
 .social-btn {
     display: flex;
     align-items: center;
@@ -219,15 +223,76 @@ hr {
     transition: 0.25s;
 }
 
-/* LOGO SIZE — bigger + crisp */
+/* LOGO SIZE */
 .social-btn img {
     width: 34px;
     height: 34px;
     object-fit: contain;
 }
 
-/* HOVER EFFECT — soft lift */
+/* HOVER EFFECT */
 .social-btn:hover {
     transform: translateY(-4px);
     background: #eef1ff;
+}
+
+.contact-sub {
+    font-size: 14px;
+    color: #6b6f9b;
+    margin-bottom: 12px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 24px;
+    max-width: 500px;
+}
+
+.contact-form label {
+    font-size: 14px;
+    color: #3b3f73;
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px 16px;
+    border-radius: 16px;
+    border: none;
+    background: #f7f8ff;
+    box-shadow: 0 4px 12px rgba(120, 130, 180, 0.15);
+    font-size: 14px;
+    resize: none;
+}
+
+.contact-form textarea {
+    height: 120px;
+}
+
+.contact-submit {
+    margin-top: 10px;
+    padding: 12px 18px;
+    border-radius: 999px;
+    border: none;
+    background: #ff7aa2;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    box-shadow: 0 6px 16px rgba(255, 122, 162, 0.35);
+    transition: 0.25s;
+}
+
+.contact-submit:hover {
+    transform: translateY(-3px);
+    background: #ff8fb3;
+}
+
+/* CONTACT INFO GROUP */
+.contact-info {
+    margin-bottom: 28px;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed #d4d8f0;
+
 }

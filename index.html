@@ -39,7 +39,7 @@
         <h2 class="section-accent">ABOUT ME</h2>
         <div class="about-me">
             <h3>Who am I?</h3>
-            <p>Hi, I'm Jasmine, a software engineer who enjoys building useful and interactive applications. I have a strong foundation in JavaScript and am currently learning Lua and C# as I grow my skills in software and game development.</p><br>
+            <p>Hi, I'm Jasmine, a software engineer who enjoys building useful and interactive applications. I have a strong foundation in JavaScript and am currently learning Lua and C# as I grow my skills in software and game development.</p>
             <p>Outside of coding, I enjoy playing video games and exploring different types of games.</p>
         </div>
         <div class="about-me">
@@ -82,18 +82,39 @@
     <hr>
 
     <!-- CONTACT PAGE -->
-    <section id="contact">
-        <h2 class="section-accent">Contact</h2>
-        <p>Email: Jasminebiri03@gmail.com</p>
-        <div class="social-links">
-            <a href="https://github.com/jbiri03" target="_blank" class="social-btn">
-                <img src="images/github_logo_black.png" alt="GitHub Logo">
-            </a>
+        <section id="contact">
+            <h2 class="section-accent">Contact</h2>
+            <p class="contact-sub">I'd love to hear from you!</p>
 
-            <a href="https://linkedin.com/in/jasminebiri" target="_blank" class="social-btn">
-                <img src="images/linkedin.png" alt="LinkedIn Logo">
-            </a>
-        </div>
-    </section>
+            <div class="contact-info">
+                <p>Email: <span class="highlight">Jasminebiri03@gmail.com</span></p>
+
+                <div class="social-links">       
+                    <div class="social-links">
+                        <a href="https://github.com/jbiri03" target="_blank" class="social-btn">
+                            <img src="images/github-cat.png" alt="GitHub Logo">
+                        </a>
+
+                        <a href="https://linkedin.com/in/jasminebiri" target="_blank" class="social-btn">
+                            <img src="images/in-logo.png" alt="LinkedIn Logo">
+                        </a>
+                    </div> 
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <label>Name</label>
+                <input type="text" placeholder="Your name">
+
+                <label>Email</label>
+                <input type="email" placeholder="Your email">
+
+                <label>Message</label>
+                <textarea placeholder="Write your message"></textarea>
+
+                <button type="submit" class="contact-submit">Send</button>
+            </form>
+        </section>
+
 </body>
 </html>
