@@ -15,6 +15,5 @@ form.addEventListener('submit', async (e) => {
     if (response.ok) {
         form.reset();
         setTimeout(() => thankYouMessage.classList.remove('show'), 3000);
-
     }
 });
