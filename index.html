@@ -163,7 +163,7 @@
             </div>
           </div>
 
-          <form class="contact-form" action="https://forminit.com/f/65egt3pp0v0" method="post">
+          <form class="contact-form" action="https://forminit.com/f/65egt3pp0v0" method="post" id="form">
             <label>
               Name
               <input type="text" placeholder="Your name" name="fi-sender-fullName" id="name" required>
@@ -179,6 +179,9 @@
               <textarea placeholder="Write your message" name="fi-text-message" id="message" required></textarea>
             </label>
 
+            <!-- THANK YOU MESSAGE -->
+            <p id="thank-you-message">Thank you for your message. I’ll respond as soon as I can.”</p>
+
             <button type="submit" class="btn btn-primary" id="submit">Send Message</button>
           </form>
         </div>
@@ -189,5 +192,8 @@
   <footer>
     <div class="container">© 2026 Jasmine Biri</div>
   </footer>
+
+  <!-- SCRIPTS -->
+   <script src="thankyou.js"></script>
 </body>
 </html>
