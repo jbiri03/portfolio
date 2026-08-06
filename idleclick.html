@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cake Idle Clicker | Jasmine Biri</title>
+  <link rel="icon" type="image/x-con" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a href="index.html" class="brand">Jasmine Biri</a>
+      <div class="nav-links">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="container section-card" style="margin-top: 2rem;">
+      <p class="eyebrow">Featured Project</p>
+      <h1>Cake Idle Clicker</h1>
+      <p class="section-sub">
+        A browser-based idle clicker game with persistent saves, upgrades, prestige, and a leaderboard.
+      </p>
+
+      <div class="hero-actions" style="margin-top: 1rem;">
+        <a href="https://idleclick-1.onrender.com/index.php" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          Live Site
+        </a>
+        <a href="https://github.com/jbiri03/idleClick" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+          GitHub Repo
+        </a>
+      </div>
+    </section>
+
+    <section class="container section-card">
+      <h2 class="section-title">Overview</h2>
+      <div class="about-grid">
+        <div>
+          <div class="stack-block">
+            <h3>Problem</h3>
+            <p>
+              I built a complete web game that demonstrates application design, persistence, 
+              and testing, while also being fun and engaging to play. The goal was to create an idle 
+              clicker with meaningful progression, account-based saves, and production deployment.
+            </p>
+          </div>
+
+          <div class="stack-block">
+            <h3>Solution</h3>
+            <p>
+              I designed and built a PHP + JavaScript web application with SQLite for persistent player 
+              saves. Players can create accounts, bake cakes by clicking, purchase upgrades, reset via 
+              prestige for permanent bonuses, view a leaderboard, and generate player reports. The app 
+              is containerized with Docker and deployed on Render.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <div class="stack-block">
+            <h3>Tech Stack</h3>
+            <ul class="chip-group">
+              <li class="chip"><span class="chip-dot"></span>PHP</li>
+              <li class="chip"><span class="chip-dot"></span>JavaScript</li>
+              <li class="chip"><span class="chip-dot"></span>SQLite</li>
+              <li class="chip"><span class="chip-dot"></span>Docker</li>
+              <li class="chip"><span class="chip-dot"></span>Render</li>
+              <li class="chip"><span class="chip-dot"></span>HTML/CSS</li>
+            </ul>
+          </div>
+
+          <div class="stack-block">
+            <h3>My Role</h3>
+            <p>
+              I designed the application architecture and class structure, implemented the game logic 
+              and UI, created the database schema, wrote functional unit tests, and configured Docker 
+              and Render deployment. I also produced the full documentation and user guides.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section-card">
+      <h2 class="section-title">Application Design</h2>
+
+      <div class="stack-block">
+        <h3>Class Design</h3>
+        <p>
+          This class diagram demonstrates the structure and relationships of the main components in 
+          Cake Idle Clicker, built using JavaScript. Although JavaScript uses prototypes for inheritance, 
+          this class diagram still serves as a useful reference for the main structure of the classes.
+        </p><br>
+        <p>
+          The application is designed for persistent gameplay through logged-in accounts. The main 
+          classes include User, PlayerSave, Upgrade, and Prestige. Users can upgrade for efficiency, 
+          save their progress, and reset via prestige to earn permanent rewards. Optionally, players 
+          can generate reports based on their saved game data.
+        </p><br>
+        <p>
+          Overall, this class diagram presents a clear overview of the Cake Idle Clicker system by 
+          showcasing the major classes, responsibilities, and relationships between them, and highlights 
+          how the system works together in an easy-to-understand format.
+        </p>
+      </div>
+
+      <div class="projects-grid" style="margin-top: 1rem;">
+          <article class="project-card screenshot-card">
+            <img src="images/class_diagram.png" alt="Class diagram for Cake Idle Clicker">
+            <div class="project-content">
+              <p class="project-kicker">Design</p>
+              <h3>Class Diagram</h3>
+              <p class="project-desc">
+                Main classes and relationships: User, PlayerSave, Upgrade, Prestige.
+              </p>
+            </div>
+          </article>
+      </div>
+    </section>
+
+    <section class="container section-card">
+      <h2 class="section-title">UI Design</h2>
+        <div>
+          <div class="stack-block">
+            <h3>Experience Overview</h3>
+            <p>
+              The UI provides a casual, easy-to-use interface that helps players quickly learn the 
+              game mechanics. The experience begins on the home page, where users see a preview of 
+              the game and a visual cue pointing to the log in or register button, indicating that 
+              an account is required before they can play.
+            </p>
+            <p><br>
+              After logging in, users are redirected back to the home page, where they can begin a 
+              new game or resume their saved progress. The main component focuses on clicking to 
+              “bake” cakes, while also giving players access to upgrades and permanent rewards via 
+              prestige in a clear and organized layout that supports progression.
+            </p>
+          </div>
+
+          <div class="stack-block">
+            <h3>Key Features</h3>
+            <ul class="tech-list">
+              <li>Persistent saves tied to user accounts in SQLite.</li>
+              <li>Account management: register, update details, and delete account and data.</li>
+              <li>Upgrade system with a search bar to quickly locate specific upgrades.</li>
+              <li>Prestige system for resetting progress in exchange for permanent bonuses.</li>
+              <li>Player reports with timestamps and progress insights, page-based and printable.</li>
+              <li>Top‑10 leaderboard that updates as the database becomes populated.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <div class="stack-block">
+            <h3>Screenshots</h3>
+            <p class="section-sub">
+              Key views of the application UI.
+            </p>
+          </div>
+
+          <div class="projects-grid" style="margin-top: 1rem;">
+            <article class="project-card screenshot-card">
+              <img src="images/initial_screen.png" alt="Index / preview page">
+              <div class="project-content">
+                <p class="project-kicker">Public</p>
+                <h3>Index Page</h3>
+                <p class="project-desc">
+                  Preview of the game with login/register prompt.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card screenshot-card">
+              <img src="images/cake_home_page.png" alt="Home page after login">
+              <div class="project-content">
+                <p class="project-kicker">Game</p>
+                <h3>Home Page</h3>
+                <p class="project-desc">
+                  Main clicker interface with cake, stats, and navigation.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card screenshot-card">
+              <img src="images/sell_page.png" alt="Sell page">
+              <div class="project-content">
+                <p class="project-kicker">Game</p>
+                <h3>Sell Page</h3>
+                <p class="project-desc">
+                  Exchange cakes for currency.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card screenshot-card">
+              <img src="images/upgrades_page.png" alt="Upgrades page">
+              <div class="project-content">
+                <p class="project-kicker">Game</p>
+                <h3>Upgrades Page</h3>
+                <p class="project-desc">
+                  Purchase upgrades with search functionality.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card screenshot-card">
+              <img src="images/prestige_page.png" alt="Presitge page">
+              <div class="project-content">
+                <p class="project-kicker">Game</p>
+                <h3>Prestige Page</h3>
+                <p class="project-desc">
+                  Prestige system for resetting progress in exchange for permanent bonuses.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card screenshot-card">
+              <img src="images/leaderboard_page.png" alt="Leaderboard page">
+              <div class="project-content">
+                <p class="project-kicker">Game</p>
+                <h3>Leaderboard</h3>
+                <p class="project-desc">
+                  Top‑10 players across multiple categories.
+                </p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+    </section>
+
+    <section class="container section-card">
+      <h2 class="section-title">Unit Test Plan</h2>
+
+      <div class="stack-block">
+        <h3>Introduction</h3>
+        <p>
+          The purpose of the unit test plan is to ensure the correctness and reliability of the 
+          Cake Idle Clicker web application. Functional unit testing was used to verify that each 
+          component performs its intended task, enabling the identification of component-specific 
+          defects before they impact the rest of the application.
+        </p>
+      </div>
+
+      <div class="stack-block">
+        <h3>Overview</h3>
+        <p>
+          Functional unit testing was used to verify that specific core components and functions 
+          behave correctly. The first test focused on inserting data into the database to ensure 
+          that all related player data was correctly stored, and then deleting that data along with 
+          all associated records. This is important for testing the delete account feature. Another 
+          test ensured that the clicker function works by verifying that the cake count increases 
+          as expected and that the display is updated accordingly.
+        </p>
+        <ul class="tech-list">
+          <li>
+            Insert User Data: Sample data was entered into the database using SQL queries in a PHP 
+            test file. The test ensured that all queries executed successfully and that the associated 
+            player data was correctly inserted. When errors were encountered, database names were 
+            checked, and it was verified that the id values correctly reference the users table.
+          </li>
+          <li>
+            Delete User Data: After inserting sample data and confirming that the insertion queries 
+            ran successfully, deleting user data was tested. This test verified that player data and 
+            all associated records are removed from the database. When errors occurred, cleanup code 
+            was added to ensure that the database was not left in an incorrect state. Additionally, 
+            SQL queries and column names were double-checked to prevent data mismatches.
+          </li>
+          <li>
+            Clicker Event: Clicking is a core feature of the game, so this test was essential. The 
+            test first confirmed that the click button element exists in the DOM. It then verified 
+            that the variable representing the number of cakes increases as expected based on click 
+            power, upgrade bonuses, and prestige multipliers. When errors occurred, it was checked 
+            that the element ID matched the HTML and that the correct bonuses were applied to 
+            `game.sugar`.
+          </li>
+          <li>
+            UI Update: Finally, it was tested that the UI updates properly. The UI must reflect the 
+            correct number of cakes after each click. When errors occurred, it was verified that 
+            there were no data mismatches and that there were no typos in variable names.
+          </li>
+        </ul>
+      </div>
+
+
+        <div>
+          <div class="stack-block">
+            <h3>Deliverables</h3>
+            <ul class="tech-list">
+              <li>Test Scripts: PHP test script (terminal) and JavaScript test script (browser console).</li>
+              <li>Test Results: Logs reporting pass/fail status and associated errors.</li>
+            </ul>
+          </div>
+
+          <div class="stack-block">
+            <h3>Pass/Fail Criteria</h3>
+            <ul class="tech-list">
+              <li>
+                Insert User Data – Pass: user and associated records inserted successfully. 
+                Fail: data mismatches, incorrect paths, or invalid queries.
+              </li>
+              <li>
+                Delete User Data – Pass: user and all associated records deleted. 
+                Fail: failed queries, data mismatches, or incorrect paths.
+              </li>
+              <li>
+                Clicker Event – Pass: click listener fires and cake count increases correctly. 
+                Fail: DOM mismatch or incorrect cake increment.
+              </li>
+              <li>
+                UI Update – Pass: UI updates with correct cake count on click. 
+                Fail: UI does not update or shows incorrect count.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      <div class="stack-block">
+        <h3>Failure Handling Strategy</h3>
+        <p>
+          When a test failed during the testing process, the following strategies were applied:
+        </p>
+        <ul class="tech-list">
+          <li>Identify the root cause: examine error messages and note all failed tests.</li>
+          <li>Fix the problem: review code, database queries, and DOM elements; check for typos and logic errors; apply fixes.</li>
+          <li>Rerun test: run tests again and repeat until all tests pass.</li>
+        </ul>
+      </div>
+
+      <div class="stack-block">
+        <h3>Specifications</h3>
+        <p class="section-sub">
+          Screenshots of the test code used for functional unit testing.
+        </p>
+      </div>
+
+      <div class="projects-grid" style="margin-top: 1rem;">
+        <article class="project-card screenshot-card">
+          <img src="images/unit_test_code1.png" alt="Test code for insert and delete user data">
+          <div class="project-content">
+            <p class="project-kicker">Testing</p>
+            <h3>Insert & Delete Tests</h3>
+            <p class="project-desc">
+              PHP test script validating database insert and delete operations.
+            </p>
+          </div>
+        </article>
+
+        <article class="project-card screenshot-card">
+          <img src="images/unit_test_code2.png" alt="Test code for clicker and UI update">
+          <div class="project-content">
+            <p class="project-kicker">Testing</p>
+            <h3>Click & UI Tests</h3>
+            <p class="project-desc">
+              JavaScript tests verifying click events and UI updates.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <div class="stack-block">
+        <h3>Procedures</h3>
+        <ul class="tech-list">
+          <li>
+            Test case preparation: identified core features (data insertion, deletion, click handling, UI updates), 
+            created sample data and logic, and defined clear pass/fail criteria.
+          </li>
+          <li>
+            Test environment setup: confirmed PHP, XAMPP, and SQLite were properly installed and configured, 
+            with correct database file paths.
+          </li>
+          <li>
+            Test execution: ran tests via terminal and browser, recorded results, analyzed failures, and iteratively 
+            refined application and test code until all tests passed.
+          </li>
+          <li>
+            Test results: documented pass/fail status, root causes of failures, and changes made; included a summary 
+            confirming that all core features met their pass criteria.
+          </li>
+        </ul>
+      </div>
+
+      <div class="stack-block">
+        <h3>Results</h3>
+        <ul class="tech-list">
+          <li>
+            Insert User Data: Three tests executed for the three related tables. All passed when user and associated 
+            player data were successfully inserted, confirming correct table structure and associations.
+          </li>
+          <li>
+            Delete User Data: Three tests executed to verify deletion of user and associated records. All passed when 
+            data was fully removed from the database.
+          </li>
+          <li>
+            Clicker Event: Test passed when the clicker DOM element was found and the cake count variable increased 
+            correctly on click. Failures were traced to missing elements or incorrect bonus application.
+          </li>
+          <li>
+            UI Update: Test passed when the UI correctly displayed the updated cake count on each click. Failures were 
+            traced to data mismatches or variable name typos.
+          </li>
+        </ul>
+      </div>
+
+      <div class="projects-grid" style="margin-top: 1rem;">
+        <article class="project-card screenshot-card">
+          <img src="images/unit_test1.png" alt="Test results for insert and delete operations">
+          <div class="project-content">
+            <p class="project-kicker">Results</p>
+            <h3>Database Tests</h3>
+            <p class="project-desc">
+              Insert and delete user data operations passing.
+            </p>
+          </div>
+        </article>
+
+        <article class="project-card screenshot-card">
+          <img src="images/unit_test2.png" alt="Test results for clicker and UI update">
+          <div class="project-content">
+            <p class="project-kicker">Results</p>
+            <h3>Click & UI Tests</h3>
+            <p class="project-desc">
+              Clicker event and UI update operations passing.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section-card">
+      <h2 class="section-title">Deployment</h2>
+
+        <div>
+          <div class="stack-block">
+            <h3>Hosted Web Application</h3>
+            <ul class="tech-list">
+              <li>
+                Hosted Web Application Link: 
+                <a href="https://idleclick-1.onrender.com/index.php" target="_blank" rel="noopener noreferrer">
+                  https://idleclick-1.onrender.com/index.php
+                </a>
+              </li>
+              <li>
+                GitHub Repository Link: 
+                <a href="https://github.com/jbiri03/idleClick" target="_blank" rel="noopener noreferrer">
+                  https://github.com/jbiri03/idleClick
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <div class="stack-block">
+            <h3>Cloud Host Deployment</h3>
+            <p>
+              I selected Render as my cloud hosting provider because it offers a variety of features 
+              that align well with my web application’s needs. Render provides ease of deployment, 
+              allowing me to quickly move the application from development to production without 
+              complex setup. Its free hosting tier is sufficient for a student project, with paid 
+              options available for persistent disk features as the application scales.
+            </p><br>
+            <p>
+              Render integrates seamlessly with GitHub, allowing me to connect my repository directly 
+              and deploy the application with minimal configuration. This integration also supports 
+              automatic redeployment whenever updates are pushed to the repository, ensuring the live 
+              application stays up to date. In addition, Render is compatible with SQLite, which is 
+              used for my database, making deployment straightforward without requiring database 
+              migration or additional configurations.
+            </p>
+          </div>
+
+          <div class="stack-block">
+            <h3>Docker Configuration</h3>
+            <p>
+              I chose to use Docker containers in my deployment because they provide a consistent 
+              environment for my application. Render natively supports Docker-based deployments, and 
+              Docker allows me to replicate the same environment for both local development and 
+              production, reducing the risk of compatibility issues.
+            </p><br>
+            <p>
+              To meet the requirements of my PHP-based application, I used the official PHP 8.3 CLI 
+              image as the base and set the working directory to `/app`. I installed the necessary 
+              dependencies, such as SQLite and required PHP extensions, to support my database 
+              functionality. I also implemented a `.dockerignore` file to exclude unnecessary files 
+              from the container image, improving image size and build efficiency. After configuring 
+              the Dockerfile, I built the container image using the terminal, allowing Render to 
+              deploy the application in a fully configured and consistent environment.
+            </p>
+          </div>
+        </div>
+    </section>
+
+    <section class="container section-card">
+      <h2 class="section-title">User Guide</h2>
+
+      <div class="stack-block">
+        <h3>Playing the Game (User)</h3>
+        <p class="section-sub">
+          Step-by-step instructions for creating an account and using core features.
+        </p>
+        <ul class="tech-list">
+          <li>
+            App Preview: On first open, you’re in preview mode. To start playing, click “Login or 
+            Register” at the top of the screen.
+          </li>
+          <li>
+            Login: Returning users can log in by entering their username and password. New users 
+            should select the registration link to create an account.
+          </li>
+          <li>
+            Registration: New users can create an account by entering the required information and 
+            submitting the form. After registration, you’ll be redirected to the login page.
+          </li>
+          <li>
+            Home Page: After logging in, you’re redirected to the home page. Click the pulsing cake 
+            to bake cakes; the cake count increases at the top of the page and in the statistics panel.
+          </li>
+          <li>
+            Generate Player Report: Use the “Generate Player Report” button on the right side of the 
+            home screen to view your player information and game statistics.
+          </li>
+          <li>
+            Sell Page: Use the left navigation to open the Sell page, where you can exchange cakes 
+            for currency based on a market price that changes every 30 seconds.
+          </li>
+          <li>
+            Upgrades Page: Purchase upgrades to improve progression. Use the search bar to find 
+            specific upgrades quickly.
+          </li>
+          <li>
+            Prestiges Page: Reset your progress in exchange for permanent rewards; requirements and 
+            bonuses are listed on the page.
+          </li>
+          <li>
+            Leaderboard Page: View the top 10 players across categories such as highest currency, 
+            most cakes, and most prestige resets.
+          </li>
+          <li>
+            Settings Page: Update your username, email, and passwords, or permanently delete your 
+            account and associated data.
+          </li>
+        </ul>
+      </div>
+
+    </section>
+
+    <section class="container section-card" style="margin-bottom: 2rem;">
+      <h2 class="section-title">See It Live</h2>
+      <p class="section-sub">
+        Want to try the game yourself?
+      </p>
+      <div class="hero-actions" style="margin-top: 1rem;">
+        <a href="https://idleclick-1.onrender.com/index.php" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          Open Cake Idle Clicker
+        </a>
+        <a href="index.html#projects" class="btn btn-secondary">
+          Back to Projects
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 2026 Jasmine Biri</div>
+  </footer>
+
+  <!-- Lightbox  -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+      <button class="lightbox-close" aria-label="Close">&times;</button>
+      <img id="lightbox-img" src="" alt="">
+  </div>
+
+
+  <!-- SCRIPTS -->
+  <script src="scripts/lightbox.js"></script>
+</body>
+</html>
