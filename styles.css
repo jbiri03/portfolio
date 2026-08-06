@@ -304,6 +304,18 @@ section {
   color: var(--text-muted);
 }
 
+.stack-block .tech-list {
+  list-style: disc;
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.stack-block .tech-list li {
+  margin-bottom: 0.4rem; 
+  line-height: 1.5; 
+  color: var(--text-muted)     
+}
+
 .chip-group {
   display: flex;
   flex-wrap: wrap;
@@ -538,4 +550,46 @@ footer {
   opacity: 1;
   pointer-events: auto;
   animation: fadeSlideIn 0.28s ease;
+}
+
+.screenshot-card {
+  cursor: zoom-in;
+  position: relative;
+}
+
+/* Lightbox container */
+.lightbox {
+  position: fixed;
+  inset: 0; /* top, right, bottom, left */
+  background: rgba(0, 0, 0, 0.85);
+  display: grid;
+  place-items: center;
+  z-index: 9999;
+  padding: 2rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.lightbox.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox img {
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  line-height: 1;
 }
