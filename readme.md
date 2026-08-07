@@ -4,6 +4,10 @@ My personal developer portfolio website, built to introduce who I am and showcas
 
 🔗 **Live site:** [jbiri03.github.io/portfolio](https://jbiri03.github.io/portfolio/index.html)
 
+## Preview
+
+![Screenshot of Jasmine Biri's developer portfolio website](./images/home_page_portfolio.png)
+
 ## About
 
 I’m Jasmine Biri, a Software Engineering student and developer interested in full-stack web development, backend systems, deployment, and game development.
