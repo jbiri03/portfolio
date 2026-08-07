@@ -55,5 +55,5 @@ Featured projects include:
 ## Contact
 
 - GitHub: [@jbiri03](https://github.com/jbiri03)
-- LinkedIn: www.linkedin.com/in/jasmine-biri-738559190
+- LinkedIn: [Jasmine Biri](https://www.linkedin.com/in/jasmine-biri-738559190)
 - Email: jasminebiri03@gmail.com
