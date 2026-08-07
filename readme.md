@@ -10,7 +10,7 @@ My personal developer portfolio website, built to introduce who I am and showcas
 
 ## About
 
-I’m Jasmine Biri, a Software Engineering student and developer interested in full-stack web development, backend systems, deployment, and game development.
+I’m Jasmine Biri, a Software Engineering graduate and developer interested in full-stack web development, backend systems, deployment, and game development.
 
 This site serves as a central place to view my work, learn more about each project, and visit live project pages.
 
