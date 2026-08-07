@@ -16,12 +16,12 @@ This site serves as a central place to view my work, learn more about each proje
 
 ## Features
 
-- About-me section
-- Project showcase with interactive project cards
-- Dedicated project details for each featured project
+- About section
+- Interactive project showcase with clickable project cards
+- Dedicated detail pages for each featured project
 - Links to live project pages
-- Responsive layout for different screen sizes
-- Contact section with a contact form 
+- Responsive design for desktop and mobile devices
+- Contact section with a contact form
 
 ## Projects
 
@@ -29,8 +29,8 @@ Each project card on the site can be selected to view more information about the
 
 Featured projects include:
 
-- **Taco Tom's Lonchera** — A restaurant website I designed and built end to end, with a     secure admin panel for real-time menu management.
-- **Cake Idle Clicker** — A browser-based idle game focused on progression, interactivity, and persistent gameplay systems.
+- **Taco Tom's Lonchera** — A restaurant website I designed and built end to end, with a secure admin panel for real-time menu management.
+- **Cake Idle Clicker** — A browser-based idle game featuring progression systems, interactive upgrades, and persistent gameplay data.
 
 
 ## Built With
