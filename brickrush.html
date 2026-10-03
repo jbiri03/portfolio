@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>BrickRush | Jasmine Biri</title>
+
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a href="index.html" class="brand">Jasmine Biri</a>
+
+      <div class="nav-links">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section class="container section-card" style="margin-top: 2rem;">
+      <p class="eyebrow">Featured Project</p>
+
+      <h1>BrickRush</h1>
+
+      <p class="section-sub">
+        Built a complete browser-based arcade game for Codyza, an online volunteer
+        coding community, with responsive controls, satisfying progression,
+        functional power-ups, and real saved player progress without requiring a backend.
+      </p>
+
+      <div class="hero-actions" style="margin-top: 1rem;">
+        <a
+          href="YOUR_BRICKRUSH_LIVE_LINK"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary"
+        >
+          Play Game
+        </a>
+
+        <a
+          href="https://github.com/jbiri03/YOUR-BRICKRUSH-REPOSITORY"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-secondary"
+        >
+          GitHub Repo
+        </a>
+      </div>
+    </section>
+
+    <section class="container section-card">
+      <h2 class="section-title">Overview</h2>
+
+      <div class="about-grid">
+        <div>
+          <div class="stack-block">
+            <h3>Goal</h3>
+
+            <p>
+              Build a complete browser-based arcade game with responsive controls,
+              satisfying progression, functional power-ups, and real saved player
+              progress without requiring a backend.
+            </p>
+          </div>
+
+          <div class="stack-block">
+            <h3>Gameplay</h3>
+
+            <p>
+              Players move a paddle to keep the ball in play and destroy every
+              brick on the board. Clearing a layout advances the player to the
+              next level. The first ten levels use authored layouts, then the
+              game continues with generated levels indefinitely.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <div class="stack-block">
+            <h3>Tech Stack</h3>
+
+            <ul class="chip-group">
+              <li class="chip"><span class="chip-dot"></span>JavaScript</li>
+              <li class="chip"><span class="chip-dot"></span>HTML5 Canvas API</li>
+              <li class="chip"><span class="chip-dot"></span>HTML5</li>
+              <li class="chip"><span class="chip-dot"></span>CSS3</li>
+              <li class="chip"><span class="chip-dot"></span>Local Storage</li>
+            </ul>
+          </div>
+
+          <div class="stack-block">
+            <h3>My Role</h3>
+
+            <p>
+              I designed and built the full game independently, including the
+              game loop, Canvas rendering, collision handling, level logic,
+              input controls, power-ups, menus, and browser-based progress
+              storage.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section-card">
+      <h2 class="section-title">Key Features</h2>
+
+      <div class="about-grid">
+        <div>
+          <div class="stack-block">
+            <h3>Core Gameplay</h3>
+
+            <ul class="chip-group" style="justify-content: flex-start; flex-wrap: wrap;">
+              <li class="chip"><span class="chip-dot"></span>Ball, wall, paddle, and brick collisions</li>
+              <li class="chip"><span class="chip-dot"></span>Score and multiple lives</li>
+              <li class="chip"><span class="chip-dot"></span>Pause, resume, restart, and game-over states</li>
+              <li class="chip"><span class="chip-dot"></span>Level-complete screen and next-level flow</li>
+            </ul>
+          </div>
+
+          <div class="stack-block">
+            <h3>Levels and Progression</h3>
+
+            <ul class="chip-group" style="justify-content: flex-start; flex-wrap: wrap;">
+              <li class="chip"><span class="chip-dot"></span>Ten authored starting levels</li>
+              <li class="chip"><span class="chip-dot"></span>Endless generated layouts after level ten</li>
+              <li class="chip"><span class="chip-dot"></span>Increasing difficulty over time</li>
+              <li class="chip"><span class="chip-dot"></span>Saved high score and highest level</li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <div class="stack-block">
+            <h3>Power-Ups</h3>
+
+            <ul class="chip-group" style="justify-content: flex-start; flex-wrap: wrap;">
+              <li class="chip"><span class="chip-dot"></span>Wide paddle for 10 seconds</li>
+              <li class="chip"><span class="chip-dot"></span>Multi-ball adds two balls</li>
+              <li class="chip"><span class="chip-dot"></span>Extra life adds one life</li>
+              <li class="chip"><span class="chip-dot"></span>Slow ball reduces speed for 8 seconds</li>
+            </ul>
+          </div>
+
+          <div class="stack-block">
+            <h3>Responsive Controls</h3>
+
+            <ul class="chip-group" style="justify-content: flex-start; flex-wrap: wrap;">
+              <li class="chip"><span class="chip-dot"></span>Arrow keys and A/D controls</li>
+              <li class="chip"><span class="chip-dot"></span>Mouse movement support</li>
+              <li class="chip"><span class="chip-dot"></span>Touch and drag controls for mobile</li>
+              <li class="chip"><span class="chip-dot"></span>Pause when the browser loses focus</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section-card">
+      <h2 class="section-title">Technical Highlights</h2>
+
+      <div class="stack-block">
+        <ul class="tech-list">
+          <li>Built a game loop with <code>requestAnimationFrame()</code> for smooth Canvas rendering.</li>
+          <li>Used delta time to keep movement and ball speed consistent across different refresh rates.</li>
+          <li>Implemented collision detection for the ball, paddle, walls, and individual bricks.</li>
+          <li>Tracked multiple active balls and only removed a life after every ball was lost.</li>
+          <li>Created timed power-up effects for the wide-paddle and slow-ball upgrades.</li>
+          <li>Built authored levels followed by procedurally generated layouts for endless progression.</li>
+          <li>Used <code>localStorage</code> to save the player’s actual high score and highest unlocked level.</li>
+          <li>Added keyboard, mouse, and touch controls for desktop and mobile play.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="container section-card">
+      <h2 class="section-title">Challenges & Solutions</h2>
+
+      <div class="about-grid">
+        <div>
+          <div class="stack-block">
+            <h3>Challenge</h3>
+
+            <p>
+              A fixed amount of movement per frame causes games to run faster
+              on high-refresh-rate monitors and slower on lower-refresh-rate
+              screens.
+            </p>
+          </div>
+
+          <div class="stack-block">
+            <h3>Solution</h3>
+
+            <p>
+              I used delta time in the animation loop. Object movement is based
+              on real elapsed time instead of a fixed number of pixels per
+              frame, keeping gameplay consistent across devices.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <div class="stack-block">
+            <h3>Challenge</h3>
+
+            <p>
+              Multi-ball creates multiple active balls, so losing one ball should
+              not immediately remove a life from the player.
+            </p>
+          </div>
+
+          <div class="stack-block">
+            <h3>Solution</h3>
+
+            <p>
+              I tracked every active ball separately and only removed a life when
+              the active-ball list was empty. This made multi-ball feel useful
+              while preserving consistent game rules.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section-card">
+      <h2 class="section-title">What I Learned</h2>
+
+      <div class="stack-block">
+        <ul class="tech-list">
+          <li>How to structure a real-time browser game around update and render cycles.</li>
+          <li>How delta time prevents gameplay speed from depending on frame rate.</li>
+          <li>How to build and debug collision systems and interactive game states.</li>
+          <li>How to manage timers, temporary effects, multiple game objects, and level transitions.</li>
+          <li>How to support desktop and mobile input in an interactive web application.</li>
+          <li>How to persist real browser-based game progress using localStorage.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="container section-card" style="margin-bottom: 2rem;">
+      <h2 class="section-title">Play BrickRush</h2>
+
+      <p class="section-sub">
+        Play the game in your browser or review the source code on GitHub.
+      </p>
+
+      <div class="hero-actions" style="margin-top: 1rem;">
+        <a
+          href="https://jbiri03.github.io/brickrush/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary"
+        >
+          Play BrickRush
+        </a>
+
+        <a
+          href="https://github.com/jbiri03/brickrush"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-secondary"
+        >
+          View Source Code
+        </a>
+
+        <a href="index.html#projects" class="btn btn-secondary">
+          Back to Projects
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">© 2026 Jasmine Biri</div>
+  </footer>
+</body>
+</html>
