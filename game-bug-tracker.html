@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Game Bug Tracker | Jasmine Biri</title>
+
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a href="index.html" class="brand">Jasmine Biri</a>
+
+      <div class="nav-links">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="container section-card" style="margin-top: 2rem;">
+      <p class="eyebrow">Featured Project</p>
+
+      <h1>Game Bug Tracker</h1>
+
+      <p class="section-sub">
+        A Java web application for submitting game bug reports, tracking their
+        status, and exporting saved issues as XML. Issues are stored in MySQL
+        using JDBC.
+      </p>
+
+      <div class="hero-actions" style="margin-top: 1rem;">
+        <a
+          href="https://github.com/jbiri03/game_bug_tracker"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary"
+        >
+          GitHub Repo
+        </a>
+
+        <a href="index.html#projects" class="btn btn-secondary">
+          Back to Projects
+        </a>
+      </div>
+    </section>
+
+    <section class="container section-card">
+      <h2 class="section-title">Overview</h2>
+
+      <div class="about-grid">
+        <div>
+          <div class="stack-block">
+            <h3>Goal</h3>
+
+            <p>
+              Create a database-backed issue tracker where game bugs can be
+              reported, reviewed, and followed through to resolution.
+            </p>
+          </div>
+
+          <div class="stack-block">
+            <h3>Solution</h3>
+
+            <p>
+              I built a Java web application that saves issues to MySQL. Users
+              can submit a title, description, and severity; view saved reports;
+              change an issue's status; and download the issues as an XML file.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <div class="stack-block">
+            <h3>Tech Stack</h3>
+
+            <ul class="chip-group">
+              <li class="chip"><span class="chip-dot"></span>Java 21</li>
+              <li class="chip"><span class="chip-dot"></span>Jakarta Servlets</li>
+              <li class="chip"><span class="chip-dot"></span>JSP</li>
+              <li class="chip"><span class="chip-dot"></span>JDBC</li>
+              <li class="chip"><span class="chip-dot"></span>MySQL</li>
+              <li class="chip"><span class="chip-dot"></span>Maven</li>
+              <li class="chip"><span class="chip-dot"></span>Apache Tomcat</li>
+              <li class="chip"><span class="chip-dot"></span>HTML and CSS</li>
+            </ul>
+          </div>
+
+          <div class="stack-block">
+            <h3>My Role</h3>
+
+            <p>
+              I built the application from setup through implementation,
+              including its database connection, data-access methods, servlet
+              routes, JSP interface, input validation, status updates, and XML
+              export.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section-card">
+      <h2 class="section-title">Key Features</h2>
+
+      <div class="about-grid">
+        <div>
+          <div class="stack-block">
+            <h3>Issue Reporting</h3>
+
+            <ul class="chip-group" style="justify-content: flex-start; flex-wrap: wrap;">
+              <li class="chip"><span class="chip-dot"></span>Submit a title and description</li>
+              <li class="chip"><span class="chip-dot"></span>Select Low, Medium, or High severity</li>
+              <li class="chip"><span class="chip-dot"></span>Validate input on the server</li>
+              <li class="chip"><span class="chip-dot"></span>New issues start as Open</li>
+            </ul>
+          </div>
+
+          <div class="stack-block">
+            <h3>Issue Dashboard</h3>
+
+            <ul class="chip-group" style="justify-content: flex-start; flex-wrap: wrap;">
+              <li class="chip"><span class="chip-dot"></span>View saved issue details</li>
+              <li class="chip"><span class="chip-dot"></span>See severity and current status</li>
+              <li class="chip"><span class="chip-dot"></span>See when each issue was created</li>
+              <li class="chip"><span class="chip-dot"></span>Data persists in MySQL</li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <div class="stack-block">
+            <h3>Status Tracking</h3>
+
+            <ul class="chip-group" style="justify-content: flex-start; flex-wrap: wrap;">
+              <li class="chip"><span class="chip-dot"></span>Open</li>
+              <li class="chip"><span class="chip-dot"></span>In Progress</li>
+              <li class="chip"><span class="chip-dot"></span>Resolved</li>
+              <li class="chip"><span class="chip-dot"></span>Update issues individually</li>
+            </ul>
+          </div>
+
+          <div class="stack-block">
+            <h3>XML Export</h3>
+
+            <ul class="chip-group" style="justify-content: flex-start; flex-wrap: wrap;">
+              <li class="chip"><span class="chip-dot"></span>Download saved issues as XML</li>
+              <li class="chip"><span class="chip-dot"></span>Generate XML with Java DOM APIs</li>
+              <li class="chip"><span class="chip-dot"></span>Safely represent special characters</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section-card">
+      <h2 class="section-title">Technical Highlights</h2>
+
+      <div class="stack-block">
+        <ul class="tech-list">
+          <li>Used JDBC and MySQL to persist issue data across Tomcat restarts.</li>
+          <li>Used prepared statements for database inserts and status updates.</li>
+          <li>Managed JDBC connections and query resources with try-with-resources.</li>
+          <li>Validated required fields, title length, severity, issue IDs, and statuses on the server.</li>
+          <li>Separated issue data, database operations, request handling, and page rendering across model, DAO, servlet, and JSP layers.</li>
+          <li>Used JSTL output escaping when displaying issue text in the page.</li>
+          <li>Generated the XML export with Java DOM and Transformer APIs.</li>
+          <li>Kept database credentials outside the Java source code using environment variables.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="container section-card">
+      <h2 class="section-title">Challenges &amp; Solutions</h2>
+
+      <div class="about-grid">
+        <div>
+          <div class="stack-block">
+            <h3>Challenge</h3>
+
+            <p>
+              Making sure the app could connect to MySQL and that the JDBC
+              driver was available when the application ran on Tomcat.
+            </p>
+          </div>
+
+          <div class="stack-block">
+            <h3>Solution</h3>
+
+            <p>
+              Added MySQL Connector/J as a Maven dependency, configured the
+              application to use the driver, and kept the database credentials
+              in Tomcat's environment settings rather than in the source code.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <div class="stack-block">
+            <h3>Challenge</h3>
+
+            <p>
+              Ensuring that changing an issue's status updates only the selected
+              database record and rejects invalid values.
+            </p>
+          </div>
+
+          <div class="stack-block">
+            <h3>Solution</h3>
+
+            <p>
+              Validated the submitted issue ID and status on the server, then
+              used a prepared SQL update with the issue ID in the
+              <code>WHERE</code> clause.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section-card">
+      <h2 class="section-title">What I Learned</h2>
+
+      <div class="stack-block">
+        <ul class="tech-list">
+          <li>How to build and run a Maven-based Java web application on Tomcat.</li>
+          <li>How servlet routes process form submissions and render responses.</li>
+          <li>How to connect Java applications to MySQL using JDBC.</li>
+          <li>How to use prepared statements and validate user input on the server.</li>
+          <li>How to organize a web application with models, DAOs, servlets, and JSP pages.</li>
+          <li>How to generate downloadable XML from database records using Java's XML APIs.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="container section-card">
+      <h2 class="section-title">Screenshots</h2>
+
+      <p class="section-sub">
+        A look at the issue dashboard and its saved reports.
+      </p>
+
+      <div class="projects-grid" style="margin-top: 1rem;">
+        <article class="project-card screenshot-card">
+          <img
+            src="images/game_bug_tracker.png"
+            alt="Game Bug Tracker form for entering an issue title, description, and severity"
+          >
+
+          <div class="project-content">
+            <p class="project-kicker">Issue Reporting</p>
+            <h3>Submit a Bug Report</h3>
+            <p class="project-desc">
+              The form collects a bug title, description, and severity before saving
+              the report to the issue tracker.
+            </p>
+          </div>
+        </article>
+        <article class="project-card screenshot-card">
+          <img
+            src="images/game_bugs.png"
+            alt="Game Bug Tracker dashboard showing the issue submission form and saved issues"
+          >
+
+          <div class="project-content">
+            <p class="project-kicker">Issue Dashboard</p>
+            <h3>Submit and Track Issues</h3>
+            <p class="project-desc">
+              The dashboard displays saved bug reports and provides controls
+              for submitting issues and updating their status.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section-card" style="margin-bottom: 2rem;">
+      <h2 class="section-title">View the Source</h2>
+
+      <p class="section-sub">
+        The application runs locally with MySQL and Apache Tomcat. Visit the
+        GitHub repository for the source code and setup instructions.
+      </p>
+
+      <div class="hero-actions" style="margin-top: 1rem;">
+        <a
+          href="https://github.com/jbiri03/game_bug_tracker"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary"
+        >
+          View Source Code
+        </a>
+
+        <a href="index.html#projects" class="btn btn-secondary">
+          Back to Projects
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 2026 Jasmine Biri</div>
+  </footer>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <script src="scripts/lightbox.js"></script>
+</body>
+</html>
